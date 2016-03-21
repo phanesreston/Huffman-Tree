@@ -1,1 +1,1 @@
-# Huffman-Tree-Encryption---ADS-CA1
+# Huffman-Tree / Encryption - ADS-CA1
