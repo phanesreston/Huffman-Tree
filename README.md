@@ -40,10 +40,10 @@ You are required to carry out the tasks below:
   1. Write a program that takes as input a text file containing a poem of your choice. Open the
 text file and encrypt the contents using one of the two following ciphers.
 
-  a. Caesar cipher, a C++ implementation is give here
+    a. Caesar cipher, a C++ implementation is give here
 http://rosettacode.org/wiki/Caesar_cipher#C.2B.2B
 
-  b. Rot-13 cipher, a C++ implementation is give here
+    b. Rot-13 cipher, a C++ implementation is give here
 http://rosettacode.org/wiki/Rot-13#C.2B.2B
 
 Here is a link to a poem you can n use if you can’t think of any
