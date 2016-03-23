@@ -24,7 +24,7 @@ int main() {
 			for (char ch : line) {
 				cout << ch << "-";
 			}
-			cout << "\n";
+			cout << "\n\n";
 		}
 		input.close();
 	}
