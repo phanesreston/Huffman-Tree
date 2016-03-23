@@ -7,8 +7,9 @@ using namespace std;
 
 int main() {
 
-	string line;
 	int freq = 0;
+	string line;
+	map<char, map<int, int>> tempFreqMap;
 	map<char, map<int, int>> freqMap;
 	map<int, int>::iterator itr1;
 	map<char, map<int, int>>::iterator itr2;
@@ -21,7 +22,7 @@ int main() {
 		{
 			for (char ch : line) {
 				freq++;
-				freqMap[ch][freq];
+				tempFreqMap[ch][freq];
 			}
 		}
 		input.close();
@@ -30,18 +31,31 @@ int main() {
 		cout << "Unable to open file";
 	}
 
-
-	for (itr2 = freqMap.begin(); itr2 != freqMap.end(); itr2++)
+	for (itr2 = tempFreqMap.begin(); itr2 != tempFreqMap.end(); itr2++)
 	{
 		int count = 0;
-		cout << itr2->first << " - ";
+		char letter;
+		letter = itr2->first;
 
 		for (itr1 = itr2->second.begin(); itr1 != itr2->second.end(); itr1++)
 		{
 			count++;
 		}
 
-		cout << "frequency: " << count << "\n\n ";
+		freqMap[letter][count];
+
+	}
+
+	cout << "--- Frequency Map ---" << "\n\n";
+
+	for (itr2 = freqMap.begin(); itr2 != freqMap.end(); itr2++)
+	{
+		cout << "character: " <<  itr2->first << " - ";
+
+		for (itr1 = itr2->second.begin(); itr1 != itr2->second.end(); itr1++)
+		{
+			cout << "frequency: " << itr1->first << "\n\n";
+		}
 
 	}
 
