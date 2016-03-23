@@ -54,7 +54,7 @@ int main() {
 
 		for (itr1 = itr2->second.begin(); itr1 != itr2->second.end(); itr1++)
 		{
-			cout << "frequency: " << itr1->first << "\n\n";
+			cout << "frequency " << itr1->first << "\n\n";
 		}
 
 	}
