@@ -6,10 +6,10 @@ using namespace std;
 class node {
 
 private:
-
+	char letter;
+	int frequency;
 	node* left;
 	node* right;
-
 public:
 
 
