@@ -8,42 +8,42 @@ using namespace std;
 int main() {
 
 	string line;
+	int freq = 0;
+	map<char, map<int, int>> freqMap;
+	map<int, int>::iterator itr1;
+	map<char, map<int, int>>::iterator itr2;
 
-	// create ifstream
-	// open file
 	ifstream input("input.txt");
-
-	// read in file contents letter by letter
 
 	if (input.is_open())
 	{
 		while (getline(input, line))
 		{
-
-			cout << line << '\n';
 			for (char ch : line) {
-				cout << ch << "-";
+				freq++;
+				freqMap[ch][freq];
 			}
-			cout << "\n\n";
 		}
 		input.close();
 	}
+	else {
+		cout << "Unable to open file";
+	}
 
-	else cout << "Unable to open file";
 
-	// store frequency
+	for (itr2 = freqMap.begin(); itr2 != freqMap.end(); itr2++)
+	{
+		int count = 0;
+		cout << itr2->first << " - ";
 
-	// create huffman tree
+		for (itr1 = itr2->second.begin(); itr1 != itr2->second.end(); itr1++)
+		{
+			count++;
+		}
 
-	// create ofstream
+		cout << "frequency: " << count << "\n\n ";
 
-	// encode message
-
-	// output encoded message to new file
-
-	// decode encoded message
-
-	// output to new file
+	}
 
 	system("pause");
 	return 0;
