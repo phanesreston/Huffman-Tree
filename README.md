@@ -1,4 +1,4 @@
-# Huffman-Tree / Cryptography - ADS-CA1
+# Huffman-Tree / Cryptography
 
 <h4>Part A (60%) Compression</h4>
 
