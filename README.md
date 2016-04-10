@@ -1,4 +1,5 @@
 # Huffman-Tree / Cryptography
+<h5>Shane Preston - x00112967</h5>
 
 <h4>Part A (60%) Compression</h4>
 
