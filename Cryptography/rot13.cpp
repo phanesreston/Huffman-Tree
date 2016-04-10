@@ -7,6 +7,9 @@ using namespace std;
 void rot13::encrypt()
 {
 	cout << "--ROT-13 CIPHER-- \n\n";
+	ofstream o;
+	o.open("encryptedPoem.txt", std::fstream::trunc);
+	o.close();
 	// open poem.txt and go through the file line by line
 	ifstream f("poem.txt");
 	while (f) {
